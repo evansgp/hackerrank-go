@@ -1,8 +1,20 @@
-package hackerutil
+package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func ReadInts() []int {
+func main() {
+	foo := readInts()
+	var sum = solve(foo)
+	fmt.Println(sum)
+}
+
+func solve(xs []int) int {
+	return nil
+}
+
+func readInts() []int {
 	var n int
 	if _, err := fmt.Scan(&n); err != nil {
 		panic(err)
